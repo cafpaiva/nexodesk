@@ -1,0 +1,43 @@
+name: Fatia de produto
+description: Propor uma entrega vertical rastreável até uma especificação.
+title: "feat: "
+labels:
+  - enhancement
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Descreva uma fatia de valor, não apenas uma tarefa técnica isolada.
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problema e resultado
+      description: Quem possui o problema e qual resultado observável esperamos?
+    validations:
+      required: true
+  - type: input
+    id: specification
+    attributes:
+      label: Especificação relacionada
+      description: Informe o requisito, seção do PRD ou ADR relacionado.
+      placeholder: FR-001 — Criação de ticket
+    validations:
+      required: true
+  - type: textarea
+    id: acceptance
+    attributes:
+      label: Critérios de aceite
+      description: Use cenários verificáveis, preferencialmente Given/When/Then.
+    validations:
+      required: true
+  - type: textarea
+    id: scope
+    attributes:
+      label: Escopo e fora de escopo
+    validations:
+      required: true
+  - type: textarea
+    id: risks
+    attributes:
+      label: Riscos e dependências
+      description: Inclua segurança, dados, operação e decisões pendentes.

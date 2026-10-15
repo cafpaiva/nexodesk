@@ -1,0 +1,45 @@
+name: Defeito
+description: Registrar comportamento incorreto com reprodução e impacto.
+title: "fix: "
+labels:
+  - bug
+body:
+  - type: textarea
+    id: observed
+    attributes:
+      label: Comportamento observado
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Comportamento esperado
+      description: Referencie o requisito ou contrato que define a expectativa.
+    validations:
+      required: true
+  - type: textarea
+    id: reproduce
+    attributes:
+      label: Como reproduzir
+      placeholder: |
+        1. Acesse...
+        2. Execute...
+        3. Observe...
+    validations:
+      required: true
+  - type: dropdown
+    id: impact
+    attributes:
+      label: Impacto
+      options:
+        - Crítico — indisponibilidade, segurança ou perda de dados
+        - Alto — fluxo principal bloqueado
+        - Médio — fluxo degradado com alternativa
+        - Baixo — impacto limitado ou visual
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Evidências e ambiente
+      description: Não inclua dados pessoais, tokens ou outros segredos.

@@ -14,6 +14,7 @@ O projeto está na fase de fundação:
 - PRD do MVP v1.0 elaborado;
 - contexto e domínio em modelagem;
 - arquitetura em ADRs propostos;
+- monorepo e quality gates iniciais configurados;
 - código de produto ainda não iniciado.
 
 ## Fonte de verdade
@@ -35,6 +36,20 @@ O projeto está na fase de fundação:
 - Processo: SDD, testes automatizados, OpenAPI e CI/CD
 
 Versões e provedores somente serão fixados nos ADRs aprovados.
+
+## Desenvolvimento
+
+O repositório usa GitHub Flow, Conventional Commits e validações automatizadas
+no GitHub Actions. Consulte o [guia de contribuição](CONTRIBUTING.md) e o
+[processo de desenvolvimento](docs/engineering/development-process.md) antes de
+iniciar uma mudança.
+
+Validação local da fundação atual:
+
+```bash
+npm ci
+npm run check
+```
 
 ## Fluxo SDD
 

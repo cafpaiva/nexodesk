@@ -1,0 +1,23 @@
+{
+  "name": "nexodesk",
+  "version": "0.0.0",
+  "private": true,
+  "description": "Engineering workspace for the NexoDesk product",
+  "engines": {
+    "node": ">=22.12 <25"
+  },
+  "scripts": {
+    "check": "npm run format:check && npm run lint:markdown && npm run validate:structure",
+    "format": "prettier --write .",
+    "format:check": "prettier --check .",
+    "lint:commits": "commitlint",
+    "lint:markdown": "markdownlint-cli2 \"**/*.md\" \"#node_modules\"",
+    "validate:structure": "node tooling/validate-structure.mjs"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^20.1.0",
+    "@commitlint/config-conventional": "^20.0.0",
+    "markdownlint-cli2": "^0.20.0",
+    "prettier": "^3.6.2"
+  }
+}

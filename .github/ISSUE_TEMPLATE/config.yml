@@ -1,0 +1,5 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Discussão de produto
+    url: https://github.com/cafpaiva/nexodesk/discussions
+    about: Use para ideias ainda sem escopo ou critérios de aceite definidos.

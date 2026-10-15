@@ -1,0 +1,26 @@
+# Dependencies and build outputs
+node_modules/
+dist/
+build/
+target/
+.angular/
+.gradle/
+
+# IDEs
+.idea/
+.vscode/
+*.iml
+
+# Operating systems
+.DS_Store
+Thumbs.db
+
+# Local configuration and secrets
+.env
+.env.*
+!.env.example
+
+# Test and tooling outputs
+coverage/
+.tmp/
+*.log
